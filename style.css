@@ -7,6 +7,16 @@ html {
   body {
     margin: 0;
   }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgb(0, 0, 0, 0);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: white;
+  }
+
   
   article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
     display: block;
@@ -22,10 +32,37 @@ html {
     display: none;
   }
   
-  [hidden], template {
-    display: none;
+  .CreditAuth {
+    padding: 0px 10px;
+    position: fixed;
+    z-index: 90;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.6s ease;
+    bottom: 0;
+    margin: 16px;
   }
-  
+  .CreditAuth:hover {
+    filter: brightness(70%);
+  }
+  .CreditAuth img {
+    width: 30px;
+  }
+  .CreditAuth a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    font-size: 10px;    
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .CreditAuth a p {
+    margin: 0;
+    font-weight: bold;
+  }
   a {
     background-color: rgba(0, 0, 0, 0);
   }
